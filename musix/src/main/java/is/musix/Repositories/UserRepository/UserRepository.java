@@ -1,19 +1,11 @@
 package is.musix.Repositories.UserRepository;
 
-public class UserRepository {
-    public void saveUser() {
+import is.musix.Entities.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-    }
-
-    public void getUserById() {
-
-    }
-
-    public void updateUser() {
-
-    }
-
-    public void deleteUser() {
-
-    }
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+    // Additional custom query methods, if needed
+    User findByUsernameAndPassword(String username, String password);
 }

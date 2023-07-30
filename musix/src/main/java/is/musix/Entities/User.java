@@ -1,33 +1,23 @@
-package is.musix.dto;
+package is.musix.Entities;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 import java.util.Date;
 
-public class UserDto {
+@Entity
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String username;
     private String email;
     private Date dateOfBirth;
     private Date createdDate;
     private String password;
-
-    public UserDto() {
-    }
-
-    public UserDto(Long id, String username, String email, Date dateOfBirth, Date createdDate, String password) {
-        this.id = id;
-        this.username = username;
-        this.email = email;
-        this.dateOfBirth = dateOfBirth;
-        this.createdDate = createdDate;
-        this.password = password;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public User() {
     }
 
     public String getUsername() {
@@ -46,7 +36,6 @@ public class UserDto {
         return createdDate;
     }
 
-
     public void setUsername(String username) {
         this.username = username;
     }
@@ -60,14 +49,14 @@ public class UserDto {
     }
 
     public void setCreatedDate(Date createdDate) {
-        this.createdDate = createdDate;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+        this.createdDate = new Date();
     }
 
     public String getPassword() {
         return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
