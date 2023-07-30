@@ -1,4 +1,4 @@
-package is.musix.Entities.AudiioEntities;
+package is.musix.Entities.AudioEntities;
 
 import jakarta.persistence.*;
 

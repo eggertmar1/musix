@@ -1,6 +1,6 @@
 package is.musix.Services.AudioFileService;
 
-import is.musix.Entities.AudiioEntities.AudioFile;
+import is.musix.Entities.AudioEntities.AudioFile;
 import is.musix.Repositories.AudioRepository.AudioFileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

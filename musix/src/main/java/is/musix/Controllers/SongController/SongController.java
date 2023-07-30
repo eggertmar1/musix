@@ -1,6 +1,6 @@
 package is.musix.Controllers.SongController;
 
-import is.musix.Entities.AudiioEntities.Song;
+import is.musix.Entities.AudioEntities.Song;
 import is.musix.Services.SongService.SongService;
 import is.musix.dto.SongRequestDto;
 import org.springframework.beans.factory.annotation.Autowired;

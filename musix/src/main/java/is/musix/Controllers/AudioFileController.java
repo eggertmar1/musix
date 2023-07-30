@@ -1,12 +1,19 @@
 package is.musix.Controllers;
 
-import is.musix.Entities.AudiioEntities.AudioFile;
+import is.musix.Entities.AudioEntities.AudioFile;
 import is.musix.Services.AudioFileService.AudioFileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * These api endpoints should only be used for testing purposes.
+ * Normal process goes through the SongController via /api/songs
+ * @author eggert
+ * @see is.musix.Controllers.SongController
+ * @see is.musix.Services.SongService.SongService
+ */
 @RestController
 @RequestMapping("/api/audiofile")
 public class AudioFileController {

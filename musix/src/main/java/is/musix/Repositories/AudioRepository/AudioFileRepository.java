@@ -1,6 +1,6 @@
 package is.musix.Repositories.AudioRepository;
 
-import is.musix.Entities.AudiioEntities.AudioFile;
+import is.musix.Entities.AudioEntities.AudioFile;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AudioFileRepository extends JpaRepository<AudioFile, Long> {
